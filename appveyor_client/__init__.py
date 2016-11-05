@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # -----------------------------------------------------------------------------
-# Copyright (c) Gonzalo Peña-Castellanos (@goanpeca)
+# Copyright (c) Gonzalo Pena-Castellanos (@goanpeca)
 #
 # Licensed under the terms of the MIT License
 # (See LICENSE.txt for details)

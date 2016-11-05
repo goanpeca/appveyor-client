@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # -----------------------------------------------------------------------------
-# Copyright (c) Gonzalo Peña-Castellanos (@goanpeca)
+# Copyright (c) Gonzalo Pena-Castellanos (@goanpeca)
 #
 # Licensed under the terms of the MIT License
 # (See LICENSE.txt for details)
@@ -44,9 +44,9 @@ setup(
     keywords=["appveyor client continuous integration api rest ci"],
     url='https://github.com/goanpeca/appveyor-client',
     license='MIT',
-    author='Gonzalo Peña-Castellanos',
+    author='Gonzalo Pena-Castellanos',
     author_email='goanpeca@gmail.com',
-    maintainer='Gonzalo Peña-Castellanos',
+    maintainer='Gonzalo Pena-Castellanos',
     maintainer_email='goanpeca@gmail.com',
     description='Appveyor Python Client',
     long_description=get_description(),
