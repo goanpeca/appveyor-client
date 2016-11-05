@@ -17,7 +17,7 @@ environment:
     PYTHON_ARCH: "64" # needs to be set for CMD_IN_ENV to succeed. If a mix
                       # of 32 bit and 64 bit builds are needed, move this
                       # to the matrix section.
-
+    CONDA_DEPENDENCIES: "requests"
   matrix:
     - PYTHON_VERSION: "3.5"
     - PYTHON_VERSION: "3.4"
@@ -40,4 +40,4 @@ install:
 build: false
 
 test_script:
-  - ciocheck appveyor_client --disable-tests
+  - "ciocheck appveyor_client --disable-tests"

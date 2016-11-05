@@ -13,8 +13,8 @@ os:
 
 env:
   global:
-    # Used by qthelpers to close widgets after a defined time
-    - TEST_CI="True"
+    # Environment variables used by astropy helpers
+    - CONDA_DEPENDENCIES: "requests"
 
   matrix:
     - TRAVIS_PYTHON_VERSION=3.5
@@ -29,4 +29,4 @@ install:
   - python setup.py develop
 
 script:
-  - ciocheck appveyor_client
+  - ciocheck appveyor_client --disable-tests

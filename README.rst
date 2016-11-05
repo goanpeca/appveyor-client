@@ -13,7 +13,7 @@ Project information
    :target: https://travis-ci.org/goanpeca/appveyor-client
    :alt: Travis-CI build status
 .. |appveyor status| image:: https://ci.appveyor.com/api/projects/status/mgv5gnstlxv718xk?svg=true
-   :target: https://ci.appveyor.com/project/goanpeca/loghub
+   :target: https://ci.appveyor.com/project/goanpeca/appveyor-client
    :alt: Appveyor build status
 .. |circleci status| image:: https://circleci.com/gh/goanpeca/appveyor-client/tree/master.svg?style=shield
    :target: https://circleci.com/gh/goanpeca/appveyor-client/tree/master

@@ -8,6 +8,7 @@ machine:
     PY_VERSIONS: "3.5 3.4 2.7"
     # Environment variables used by astropy helpers
     TRAVIS_OS_NAME: "linux"
+    CONDA_DEPENDENCIES: "requests"
 
 dependencies:
   override:
@@ -25,5 +26,5 @@ dependencies:
 test:
   override:
     # Check style
-    - export PATH="$HOME/miniconda/bin:$PATH" && source activate test && ciocheck appveyor_client: # note the colon
+    - export PATH="$HOME/miniconda/bin:$PATH" && source activate test && ciocheck appveyor_client --disable-tests: # note the colon
         parallel: true
