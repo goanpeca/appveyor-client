@@ -38,7 +38,7 @@ match = '(?!github.py)'
 # -----------------------------------------------------------------------------
 [flake8]
 exclude = */tests/*,*/external/*
-ignore = E126,
+ignore = E126,F401
 max-line-length = 79
 max-complexity = 64
 

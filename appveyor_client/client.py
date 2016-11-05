@@ -257,8 +257,8 @@ class Collaborators(_Base):
         """
         method_url = 'POST /api/collaborators'
         data = {
-           "email": email,
-           "roleId": role_id,
+            "email": email,
+            "roleId": role_id,
         }
         body = json.dumps(data)
         return self._client._request(method_url, body=body)
@@ -271,8 +271,8 @@ class Collaborators(_Base):
         """
         method_url = 'PUT /api/collaborators'
         data = {
-           "userId": user_id,
-           "roleId": role_id,
+            "userId": user_id,
+            "roleId": role_id,
         }
         body = json.dumps(data)
         return self._client._request(method_url, body=body)
@@ -311,9 +311,7 @@ class Roles(_Base):
         https://www.appveyor.com/docs/api/team/#add-role
         """
         method_url = 'POST /api/roles'
-        data = {
-            "name": name,
-        }
+        data = {"name": name, }
         body = json.dumps(data)
         return self._client._request(method_url, body=body)
 
@@ -334,7 +332,7 @@ class Roles(_Base):
                      "permissions":[
                         {
                            "name":"ManageProjects",
-                           "description":"Create, delete projects, update project settings",
+                           "description":"Create, project settings",
                            "allowed":true
                         },
                         {
@@ -359,7 +357,7 @@ class Roles(_Base):
                      "permissions":[
                         {
                            "name":"ManageEnvironments",
-                           "description":"Create, delete projects, update environment settings",
+                           "description":"Create environment settings",
                            "allowed":false
                         },
                         {
@@ -1075,7 +1073,3 @@ class Deployments(_Base):
         data = {"deploymentId": deployment_id}
         body = json.dumps(data)
         return self._client._request(method_url, body=body)
-
-
-def test():
-    client = AppveyorClient('token')
