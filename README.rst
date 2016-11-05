@@ -33,7 +33,22 @@ Project information
 
 Description
 -----------
-Simple python interface to the Appveyor restfull api.
+Simple python interface to the Appveyor restful api.
+
+Usage
+-----
+
+::
+
+  from appveyor_client import AppveyorClient
+  client = AppveyorClient('{appveyor_token}')
+
+  # Get list of projects
+  projects = client.projects.get()
+
+  # Get list projects builds
+  builds = client.projects.history('goanpeca', 'appveyor-client')
+
 
 Installation
 ------------
