@@ -22,6 +22,6 @@ Thumbs.db
 # git .orig files
 *.orig
 
-loghub.egg-info/
+*.egg-info/
 
 CHANGELOG.temp
