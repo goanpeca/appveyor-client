@@ -93,7 +93,7 @@ class AppveyorClient(object):
             contents['status_code'] = status_code
             raise AppveyorError(contents)
 
-    def _get(self, url):
+    def _get(self, url, data=None, json=None):
         """Send GET request with given url."""
         response = self._session.get(self._make_url(url))
         return self._parse_response_contents(response)
@@ -109,7 +109,7 @@ class AppveyorClient(object):
         response = self._session.put(self._make_url(url), data=data, json=json)
         return self._parse_response_contents(response)
 
-    def _delete(self, url):
+    def _delete(self, url, data=None, json=None):
         """Send DELETE request with given url."""
         response = self._session.delete(self._make_url(url))
         return self._parse_response_contents(response)
@@ -128,7 +128,7 @@ class AppveyorClient(object):
 
     def account_slug_for_repo(self, repo_full_name):
         """Return the account name and project slug for a repo full name."""
-        projects = self.projects()
+        projects = self.projects.get()
         for project in projects:
             if project['repositoryName'].lower() == repo_full_name.lower():
                 account_name = project['accountName']
