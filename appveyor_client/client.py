@@ -143,10 +143,10 @@ class AppveyorClient(object):
 
 
 class _Base(object):
-    """"""
+    """Base entity class."""
 
     def __init__(self, client):
-        """"""
+        """Base entity class."""
         self._client = client
 
 
@@ -155,7 +155,7 @@ class Users(_Base):
 
     def get(self, user_id=None):
         """
-        Get urers or user specified by user_id.
+        Get users or user specified by user_id.
 
         https://www.appveyor.com/docs/api/team/#get-users
         https://www.appveyor.com/docs/api/team/#get-user

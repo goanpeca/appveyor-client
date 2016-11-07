@@ -51,6 +51,7 @@ setup(
     description='Appveyor Python Client',
     long_description=get_description(),
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    install_requires=['requests'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

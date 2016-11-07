@@ -18,8 +18,8 @@ Project information
 .. |circleci status| image:: https://circleci.com/gh/goanpeca/appveyor-client/tree/master.svg?style=shield
    :target: https://circleci.com/gh/goanpeca/appveyor-client/tree/master
    :alt: Circle-CI build status
-.. |quantified code| image:: https://www.quantifiedcode.com/api/v1/project/b5e47eec1e564a66a8c52c989880637b/badge.svg
-   :target: https://www.quantifiedcode.com/app/project/b5e47eec1e564a66a8c52c989880637b
+.. |quantified code| image:: https://www.quantifiedcode.com/api/v1/project/cc20fe74549746108607476699d2d7ec/badge.svg
+   :target: https://www.quantifiedcode.com/app/project/cc20fe74549746108607476699d2d7ec
    :alt: Quantified Code issues
 .. |scrutinizer| image:: https://scrutinizer-ci.com/g/goanpeca/appveyor-client/badges/quality-score.png?b=master
    :target: https://scrutinizer-ci.com/g/goanpeca/appveyor-client/?branch=master
@@ -46,7 +46,7 @@ Usage
   # Get list of projects
   projects = client.projects.get()
 
-  # Get list projects builds
+  # Get list of projects builds
   builds = client.projects.history('goanpeca', 'appveyor-client')
 
 
