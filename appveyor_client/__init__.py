@@ -9,5 +9,5 @@
 
 from .client import AppveyorClient
 
-VERSION_INFO = (0, 1, 0)
+VERSION_INFO = (0, 1, 1, 'dev0')
 __version__ = '.'.join(map(str, VERSION_INFO))
