@@ -853,6 +853,18 @@ class Builds(_Base):
             build_version=build_version)
         return self._client._request(method_url)
 
+    def delete(self, account_name, buildId):
+        """
+        Delete build.
+
+        https://www.appveyor.com/docs/api/projects-builds/#delete-project
+        """
+        method_url = ('DELETE /api/builds/{buildId}')
+        method_url = method_url.format(
+            account_name=account_name,
+            buildId=buildId)
+        return self._client._request(method_url)
+
     def log(self, job_id):
         """
         Download build log.
