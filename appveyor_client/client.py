@@ -824,7 +824,12 @@ class Builds(_Base):
 
         if branch and not pull_request_number and not commit:
             data['branch'] = branch
-        elif commit and not commit and not pull_request_number:
+        elif commit and not branch and not pull_request_number:
+            # 'branch' parameter is mandatory according to 'Start build of specific branch commit'.
+            # If there is no 'branch' parameter, git clone fails with the following error.
+            #   'fatal: Remote branch  not found in upstream origin'
+            # It is used for the parameter of --branch option.
+            data['branch'] = 'master'
             data['commitId'] = commit
         elif pull_request_number and not commit and not branch:
             data['pullRequestId'] = pull_request_number
